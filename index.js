@@ -97,6 +97,17 @@ app.post("/api/addfeedback", async (req, res) => {
   }
 });
 connectDatabase();
+app.use(express.static("client/build"));
+app.get("*", (req, res) => {
+  res.sendFile(
+    path.resolve(__dirname + "/client/build/index.html"),
+    function (err) {
+      if (err) {
+        console.log(err);
+      }
+    }
+  );
+});
 app.listen(8000, () => {
   console.log("port connected");
 });
