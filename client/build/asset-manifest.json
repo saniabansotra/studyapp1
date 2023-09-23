@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.3016475f.css",
-    "main.js": "/static/js/main.7271de88.js",
+    "main.js": "/static/js/main.a9b74ed2.js",
     "static/js/787.305c4690.chunk.js": "/static/js/787.305c4690.chunk.js",
     "static/media/backgroundimage.webp": "/static/media/backgroundimage.de59f8d2b314cfe59477.webp",
     "static/media/webdevelopment.jpg": "/static/media/webdevelopment.7f24e1c157b95b676e3d.jpg",
@@ -12,11 +12,11 @@
     "static/media/Java-Course.jpg": "/static/media/Java-Course.d4a0abd50be356bf98aa.jpg",
     "index.html": "/index.html",
     "main.3016475f.css.map": "/static/css/main.3016475f.css.map",
-    "main.7271de88.js.map": "/static/js/main.7271de88.js.map",
+    "main.a9b74ed2.js.map": "/static/js/main.a9b74ed2.js.map",
     "787.305c4690.chunk.js.map": "/static/js/787.305c4690.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3016475f.css",
-    "static/js/main.7271de88.js"
+    "static/js/main.a9b74ed2.js"
   ]
 }

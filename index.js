@@ -1,17 +1,15 @@
 const express = require("express");
 
 const collection = require("./model/login");
-const cors = require("cors");
+
 const user = require("./model/contact");
 const userfeedback = require("./model/feedback");
 const app = express();
 app.use(express.json());
 const path = require("path");
 app.use(express.urlencoded({ extended: true }));
-app.use(cors());
-const { connectDatabase } = require("./connection/connect");
 
-app.get("/", cors(), (req, res) => {});
+const { connectDatabase } = require("./connection/connect");
 
 app.post("/", async (req, res) => {
   const { email, password } = req.body;
@@ -103,7 +101,7 @@ connectDatabase();
 app.use(express.static("client/build"));
 app.get("*", (req, res) => {
   res.sendFile(
-    path.resolve(__dirname + "client/build/index.html"),
+    path.resolve(__dirname + "/client/build/index.html"),
     function (err) {
       if (err) {
         console.log(err);
